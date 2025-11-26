@@ -13,6 +13,8 @@ Optimizes thread priority, affinity, and boost for games and other applications 
 - Future planned features:
   - Automatic power plan switching
   - Automatic profile generation
+  - Module optimizion
+  - more thread optimizion by default
 
 ## Configuration
 
