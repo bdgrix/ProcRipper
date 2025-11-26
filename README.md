@@ -1,5 +1,5 @@
 # ProcRipper
-[Demo Video](assets/ShowCase.mp4)
+<video src="https://github.com/bdgrix/ProcRipper/blob/main/assets/ShowCase.mp4" controls width="720"></video>
 Optimizes thread priority, affinity, and boost for games and other applications to maximize performance on Windows.
 
 ## Features
