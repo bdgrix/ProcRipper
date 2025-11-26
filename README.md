@@ -30,7 +30,7 @@ Optimizes thread priority, affinity, and boost for games and other applications 
 - Used for non-game applications.
 - Same format as `GAME_PRIORITY.GCFG`.
 
-> Game and other app configs are separated to maximize performance while gaming.
+> PROC_PRIORITY will run when game proc detect
 
 ## Usage
 
