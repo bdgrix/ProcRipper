@@ -46,7 +46,3 @@ Optimizes thread priority, affinity, and boost for games and other applications 
 - Threads not found in the config are logged to the console.
 - appylied Thread optimizion will display in console
 - game proc detection
-
-## License
-
-[Attribution-Style License] – allows usage, modification, and closed-source redistribution with attribution.
