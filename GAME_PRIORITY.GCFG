@@ -1,0 +1,41 @@
+# Fortnite Thread Priority Configuration
+# Format: THREAD_NAME=PRIORITY,AFFINITY,DISABLE_BOOST
+# Available priorities:
+# 15=TIME_CRITICAL, 2=HIGHEST, 1=ABOVE_NORMAL, 0=NORMAL, -1=BELOW_NORMAL, -2=LOWEST, -15=IDLE
+#
+# Affinity options:
+# ALL = Use all CPU cores
+# 0,2,4,6 = Use only even cores (for 8-core CPU)
+# 0-3 = Use first 4 cores
+# 0,1 = Use first 2 cores only
+#
+# DisableBoost: true/false - Disables priority boosting for more consistent performance
+# true = NO boosting (recommended for gaming)
+# false = YES boosting (Windows default)
+
+#MODIFIED Beyond Fortnite Thread Template For Controller Player
+[FortniteClient-Win64-Shipping.exe]
+# CRITICAL PATH - Maximum priority
+RenderThread 0=15,0,2,4,6,true
+RHIThread=15,0,2,4,6,true
+GameThread=15,1,3,5,7,true
+
+# HIGH PRIORITY - Prevents issues
+AudioMixerRenderThread(2)=2,1,3,5,7,true
+
+# NORMAL PRIORITY - Important but not critical  
+RtcNetworkThread=0,1,3,5,7,true
+RtcWorkerThread=0,1,3,5,7,true
+
+# LOW PRIORITY - Background tasks
+Background Worker #2=-1,1,3,5,7,true
+Background Worker #1=-1,1,3,5,7,true
+Background Worker #3=-1,1,3,5,7,true
+Background Worker #7=-1,1,3,5,7,true
+Background Worker #4=-1,1,3,5,7,true
+Background Worker #5=-1,1,3,5,7,true
+Background Worker #6=-1,1,3,5,7,true
+Background Worker #0=-1,1,3,5,7,true
+FAsyncLoadingThread=-15,1,3,5,7,true
+WindowsRawInputThread=-2,1,3,5,7,true 
+# Why Input Thread is lowest? https://x.com/BEYONDPERF_LLG/status/1993263329993724067

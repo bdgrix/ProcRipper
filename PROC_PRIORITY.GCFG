@@ -1,0 +1,7 @@
+# * FORMAT  
+#[ProcessName.exe]
+#ThreadName=Priority,Affinity,DisableBoost
+
+[dwm.exe]
+#DWM Kernel Sensor Thread=-2,1,3,5,7,true (remove # at first of line if you use controller)
+DWM Master Input Thread=15,0,2,4,6,true
