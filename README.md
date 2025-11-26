@@ -1,7 +1,16 @@
-# ProcRipper
-<p align="center" width="100%">
-<video src="https://github.com/user-attachments/assets/563d36e5-1c92-49e6-aa88-c873a20ddf1d](https://github.com/bdgrix/ProcRipper/blob/main/assets/ShowCase.mp4" width="80%" controls></video>
-</p>
+<h3>
+  <img src="https://github.com/JaKooLit/Telegram-Animated-Emojis/blob/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
+   ProcRipper
+  <img src="https://github.com/JaKooLit/Telegram-Animated-Emojis/blob/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
+</h3>
+Showcase
+
+
+<div align="center">
+
+https://github.com/user-attachments/assets/d7efae69-3301-4b01-9fa0-4fa84991f97b
+
+</div>
 
 ## Features
 
