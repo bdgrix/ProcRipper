@@ -1,4 +1,4 @@
-# ThreadOptimizer
+# ProcRipper
 
 Optimizes thread priority, affinity, and boost for games and other applications to maximize performance on Windows.
 
@@ -36,10 +36,11 @@ Optimizes thread priority, affinity, and boost for games and other applications 
 
 ## Usage
 
-1. Run `ThreadOptimizer.exe` as administrator.
+1. Run `ProcRipper.exe` as administrator.
 2. Configure your target process and threads in the `.GCFG` files.
 3. Launch the target game; thread settings will be applied automatically.
-
+4. you can copy ProcRipper.exe shortcut into shell:startup so its run on startup (optional)
+ 
 ## Logging
 
 - Threads not found in the config are logged to the console.
