@@ -25,6 +25,7 @@ https://github.com/user-attachments/assets/d7efae69-3301-4b01-9fa0-4fa84991f97b
   - Automatic profile generation
   - Module optimizion
   - more thread optimizion by default
+  - per-app memory limit
 
 ## Configuration
 
