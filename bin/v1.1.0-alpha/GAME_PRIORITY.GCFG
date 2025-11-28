@@ -1,0 +1,37 @@
+#Format
+#[ProcessName.exe,affinity,boost]
+#per proc affinity and Priority dosent work yet
+#ThreadName=Priority,Affinity,DisableBoost
+# Available priorities:
+# 15=TIME_CRITICAL, 2=HIGHEST, 1=ABOVE_NORMAL, 0=NORMAL, -1=BELOW_NORMAL, -2=LOWEST, -15=IDLE
+#
+# Affinity options:
+# ALL = Use all CPU cores
+# 0,2,4,6 = Use only even cores (for 8-core CPU)
+# 0-3 = Use first 4 cores
+# 0,1 = Use first 2 cores only
+#
+# DisableBoost: true/false - Disables priority boosting for more consistent performance
+# true = NO boosting (recommended for gaming)
+# false = YES boosting (Windows default)
+
+#MODIFIED Beyond Fortnite Thread Template For Controller Player
+
+
+[FortniteClient-Win64-Shipping.exe]
+# CRITICAL PATH - Maximum priority
+RenderThread 0=15,ALL,False
+RHIThread=15,ALL,False
+GameThread=15,ALL,False
+
+# HIGH PRIORITY - Prevents issues
+AudioMixerRenderThread(2)=2,ALL,true
+
+# NORMAL PRIORITY - Important but not critical  
+RtcNetworkThread=0,ALL,true
+RtcWorkerThread=0,ALL,true
+
+# LOW PRIORITY - Background tasks
+FAsyncLoadingThread=-15,ALL,true
+WindowsRawInputThread=-2,ALL,true 
+# Why Input Thread is lowest? https://x.com/BEYONDPERF_LLG/status/1993263329993724067
