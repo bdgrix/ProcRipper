@@ -58,7 +58,7 @@ https://github.com/user-attachments/assets/d7efae69-3301-4b01-9fa0-4fa84991f97b
 - appylied Thread optimizion will display in console
 - game proc detection
 
-### Donation 
+## Donation 
 
 
 I Put So Much Of Time Into ProcRipper And At least I Want You Gauys Support
@@ -78,5 +78,10 @@ First: Donate With Crypto
 | USDT (ERC20) | `0xC3cE92Ce2663b2Eb32216A4A604F5e158B8e2c68` |
 | USDT (TRC20) | `TGC3TYRF3ebv6M5iqz4JSZpELpq19QeACT` |
 
-## Discord
-https://discord.gg/pVuejEbn
+Second: ⭐Stars
+
+[![GitHub stars](https://img.shields.io/github/stars/bdgrix/ProcRipper?style=social)](https://github.com/bdgrix/ProcRipper/stargazers)
+
+## ⚠️Next Version Will Be Only Available For People Who Send Money Or Give Me Stars**
+Send Prove In Discord -> https://discord.gg/pVuejEbn
+
