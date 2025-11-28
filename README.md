@@ -57,3 +57,26 @@ https://github.com/user-attachments/assets/d7efae69-3301-4b01-9fa0-4fa84991f97b
 - Threads not found in the config are logged to the console.
 - appylied Thread optimizion will display in console
 - game proc detection
+
+### Donation 
+
+
+I Put So Much Of Time Into ProcRipper And At least I Want You Gauys Support
+
+how ? there is 2 way
+
+First: Donate With Crypto
+
+| Coin       | Address                                      |
+|------------|----------------------------------------------|
+| USDT (BEP20) | `0xC3cE92Ce2663b2Eb32216A4A604F5e158B8e2c68` |
+| BTC        | `bc1qmvrpm49fagv2v2wpdz2svu5drk4hny2ydj9s7w` |
+| ETH        | `0xC3cE92Ce2663b2Eb32216A4A604F5e158B8e2c68` |
+| SOL        | `E3CVLRFFGun4FhBbc3kJ4aihWhTbqXtt5eRYccKJYoSN` |
+| LTC        | `ltc1qzydnfefx30lk7sp7wcacejkdr9nf2sxyhwzaks` |
+| BNB        | `0xC3cE92Ce2663b2Eb32216A4A604F5e158B8e2c68` |
+| USDT (ERC20) | `0xC3cE92Ce2663b2Eb32216A4A604F5e158B8e2c68` |
+| USDT (TRC20) | `TGC3TYRF3ebv6M5iqz4JSZpELpq19QeACT` |
+
+## Discord
+https://discord.gg/pVuejEbn
