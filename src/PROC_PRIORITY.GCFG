@@ -1,25 +1,353 @@
-# * FORMAT  
-#[ProcessName.exe,affinity,boost]
-#ThreadName=Priority,Affinity,DisableBoost
+# ================================================================
+# PROC CONFIG FOR PROCRIPPER V2.0.0-beta cerdit REAPER
+# ================================================================
+# 
 
-[dwm.exe]
-DWM Kernel Sensor Thread=-2,ALL,true 
-#(only use DWM Kernel Sensor Thread optimizion if you use controller)
-DWM Master Input Thread=15,ALL,true
 
-[explorer.exe]
-DWM Master Input Thread=15,ALL,true
+[mousocoreworker.exe,15,auto,false]
+[HidHide.exe,15,auto,false]
 
-#[csrss.exe]
-#Win32k Raw Input Thread=-2,ALL,true 
-#dosent work yet
 
-[discord.exe]
-updater-client-worker=300
-updater-client-worker=300
-updater-client-worker=300
-updater-client-worker=300 
-updater-main=300
+# ========= AUDIO SYSTEM (RENDER CORES 6-7) =========
+[audiodg.exe,2,auto,true]
+AudioRenderThread=2,auto,true
+AudioCaptureThread=-15,auto,true
+AudioMixerThread=2,auto,true
 
-[obs.exe]
-libobs: hotkey thread =-2,ALL,true 
+# ========= NVIDIA DRIVERS (SPLIT) =========
+[nvcontainer.exe]
+DisplayDriverService=0,auto,true
+TelemetryThread=-15,auto,true
+
+[NVDisplay.Container.exe]
+module=combase.dll, -15
+module=nvapi64.dll, 300
+module=NvTelemetryAPI64.dll, 300
+module=NVDisplay.Container.exe, 300
+module=NvcDispWatchdog.dll, 300
+module=nvxdsyncplugin.dll, 300
+module=wksServicePlugin.dll, 300
+module=_NvGSTPlugin.dll, 300
+module=_nvtopps.dll, 300
+module=NvXDCore.dll, 300
+module=NvMessageBus.dll, 300
+module=_NvMsgBusBroadcast.dll, 300
+module=_dbgeng.dll, 300
+module=dbgeng.dll, 300
+module=nvxdapix.dll, 300
+module=DispBroker.dll, 300
+module=nvui.dll, 300
+module=nvsvc64.dll, 300
+module=nvprofileupdaterplugin.dll, 300
+module=_DisplayDriverRAS.dll, 300
+module=ntdll.dll, -15
+
+[nvcontainer.exe]
+module=nvcontainer.exe, 300
+module=NvPluginWatchdog.dll, 300
+module=NvTelemetry64.dll, 300
+module=NvXDCore.dll, 300
+module=_nvspserviceplugin64.dll, 300
+module=NvTelemetryAPI64.dll, 300
+module=NvUI.dll, 300
+module=nvxdapix.dll, 300
+module=mswsock.dll, 200
+module=nvapi64.dll, 200
+module=nvxdsyncplugin.dll, 300
+module=ipccommon64.dll, 300
+module=nvxdsyncplugin.dll, 300
+module=combase.dll, -15
+module=NvMessageBus.dll, -15
+module=NvMessageBusBroadcast.dll, -15
+module=ucrtbase.dll, -15
+module=NvBackend64.dll, -15
+module=ntdll.dll, -15
+
+# ========= EXPLORER / SHELL (SYSTEM CORES, IDLE) =========
+[explorer.exe,-15,auto,true]
+ShellExperienceHost=-15,auto,true
+module=twinui.pcshell.dll, 200 
+module=MsSpellCheckingFacility.dll, 200
+module=CoreMessaging.dll, 200
+module=GdiPlus.dll, 200
+module=Windows.Gaming.Input.dll, 300
+module=sppc.dll, 200
+module=wlidprov.dll, 200
+module=SndVolSSO.dll, 200
+module=dxgi.dll, 200
+module=Windows.UI.Xaml.dll, -1
+module=dwmcorei.dll, -1
+module=CoreMessagingXP.dll, -1
+module=Microsoft.ui.xaml.dll, -1
+
+
+[ShellExperienceHost.exe,-15,auto,true]
+UIThread=-15,auto,true
+
+[ShellHost.exe,-15,auto,true]
+
+[sihost.exe,-15,auto,true]
+
+[ctfmon.exe,-15,auto,true]
+
+
+[StartMenuExperienceHost.exe,-15,auto,true]
+
+[SearchHost.exe,-15,auto,true]
+
+[TextInputHost.exe,-15,auto,true]
+
+# ========= BROWSERS (ALL → SYSTEM CORES, IDLE) =========
+[thorium.exe]
+CBrowserMain=-15,auto,true
+CrRendererMain=-15,auto,true
+CrGpuMain=-15,auto,true
+Chrome_IOThread=-15,auto,true
+NetworkService=-15,auto,true
+GpuMemoryThread=-15,auto,true
+CompositorThread=-15,auto,true
+VideoDecodeThread=-15,auto,true
+AudioDecodeThread=-15,auto,true
+ServiceWorker=-15,auto,true
+
+[msedge.exe]
+CrBrowserMain=-15,auto,true
+CrRendererMain=-15,auto,true
+CrGpuMain=-15,auto,true
+Chrome_IOThread=-15,auto,true
+NetworkService=-15,auto,true
+GpuMemoryThread=-15,auto,true
+CompositorThread=-15,auto,true
+VideoDecodeThread=-15,auto,true
+
+[chrome.exe]
+CrBrowserMain=-15,auto,true
+CrRendererMain=-15,auto,true
+CrGpuMain=-15,auto,true
+Chrome_IOThread=-15,auto,true
+NetworkService=-15,auto,true
+
+[brave.exe]
+CrBrowserMain=-15,auto,true
+CrRendererMain=-15,auto,true
+Chrome_IOThread=-15,auto,true
+
+[firefox.exe,-15,auto,true]
+CompositorThread=-15,auto,true
+RenderThread=-15,auto,true
+
+# ========= DISCORD (SYSTEM CORES, EXCEPT AUDIO ON RENDER) =========
+[Discord.exe]
+AudioRenderThread=2,auto,true
+AudioMixerThread=2,auto,true
+AudioiceThread=2,auto,true
+updater-client-worker=-15,auto,true
+updater-main=-15,auto,true
+UpdateService=-15,auto,true
+DiscordNetworkThread=-15,auto,true
+WebRTCNetworkThread=-15,auto,true
+NetworkService=-15,auto,true
+VideoDecodeThread=-15,auto,true
+VideoEncodeThread=-15,auto,true
+StreamingThread=-15,auto,true
+gpu-process=-15,auto,true
+CrBrowserMain=-15,auto,true
+CrRendererMain=-15,auto,true
+
+# ========= COMMUNICATION APPS (SYSTEM CORES) =========
+[Skype.exe,-15,auto,true]
+
+[Slack.exe,-15,auto,true]
+
+
+[Teams.exe,-15,auto,true]
+
+
+[Zoom.exe,-15,auto,true]
+
+
+# ========= SCREENSHOT/UTILITY APPS (SYSTEM CORES) =========
+[Lightshot.exe,-15,auto,true]
+HotkeyThread=0,auto,true
+UploadThread=-15,auto,true
+NetworkThread=-15,auto,true
+
+[SnippingTool.exe,-15,auto,true]
+
+
+[ShareX.exe,-15,auto,true]
+
+[obs64.exe,2,auto,true]
+EncoderThread=2,auto,true
+NetworkThread=-15,auto,true
+
+# ========= WINDOWS SERVICES (svchost → SYSTEM CORES) =========
+[svchost.exe]
+WUDFHost=-15,auto,true
+DiagTrack=-15,auto,true
+DoSvc=-15,auto,true
+BITS=-15,auto,true
+Themes=-15,auto,true
+UxSms=-15,auto,true
+AudioSrv=0,auto,true
+AudioEndpointBuilder=0,auto,true
+Dnscache=0,auto,true
+Dhcp=0,auto,true
+Tcpip=-1,auto,true
+MaintenanceTask=-15,auto,true
+ScheduledDefrag=-15,auto,true
+WinDefend=-15,auto,true
+SecurityHealthService=-15,auto,true
+wscsvc=-15,auto,true
+
+# ========= WINDOWS DEFENDER (SYSTEM CORES, IDLE) =========
+[MsMpEng.exe]
+MpScanTask=-15,auto,true
+MpUpdateTask=-15,auto,true
+MpEngine=-15,auto,true
+NisSrv=-15,auto,true
+
+[MpCmdRun.exe,-15,auto,true]
+
+
+[NisSrv.exe,-15,auto,true]
+
+[SecurityHealthSystray.exe,-15,auto,true]
+
+[SecurityHealthService.exe,-15,auto,true]
+
+# ========= SEARCH INDEXER (SYSTEM CORES, IDLE) =========
+[SearchIndexer.exe]
+MsSearchIndexer=-15,auto,true
+IndexingThread=-15,auto,true
+FilterThread=-15,auto,true
+
+[SearchProtocolHost.exe,-15,auto,true]
+
+[SearchHost.exe,-15,auto,true]
+
+# ========= SYSTEM UTILITY PROCESSES (SYSTEM CORES) =========
+[RuntimeBroker.exe,-15,auto,true]
+
+
+[taskhostw.exe,-15,auto,true]
+module=taskhostw.exe, 200
+module=PlaySndSrv.dll, 200
+module=esent.dll, 200
+module=ntdll.dll, 200
+
+[dllhost.exe,-15,auto,true]
+
+[conhost.exe,-15,auto,true]
+
+
+[ApplicationFrameHost.exe,-15,auto,true]
+
+[SystemSettings.exe,-15,auto,true]
+
+
+[SettingSyncHost.exe,-15,auto,true]
+
+
+[UserOOBEBroker.exe,-15,auto,true]
+
+
+# ========= WINDOWS UPDATE (SYSTEM CORES, IDLE) =========
+[TrustedInstaller.exe,-15,auto,true]
+
+[TiWorker.exe,-15,auto,true]
+
+[wuauclt.exe,-15,auto,true]
+
+
+[UsoClient.exe,-15,auto,true]
+
+
+# ========= ONEDRIVE / CLOUD SYNC (SYSTEM CORES, IDLE) =========
+[OneDrive.exe,-15,auto,true]
+
+
+
+# ========= POWERSHELL / CMD (SYSTEM CORES) =========
+[powershell.exe,-15,auto,true]
+
+[pwsh.exe,-15,auto,true]
+
+[cmd.exe,-15,auto,true]
+
+
+[WindowsTerminal.exe,-15,auto,true]
+
+
+
+# ========= RAZER / LOGITECH / PERIPHERAL SOFTWARE =========
+[RazerCentralService.exe,-15,auto,true]
+
+
+[Razer Synapse.exe,-15,auto,true]
+
+[LGHUB.exe,-15,auto,true]
+
+[LCore.exe]
+
+[CorsairService.exe,-15,auto,true]
+
+
+[iCUE.exe,-15,auto,true]
+
+
+# ========= STEAM / GAME LAUNCHERS (SYSTEM CORES) =========
+[steam.exe,-15,auto,true]
+
+[steamwebhelper.exe,-15,auto,true]
+
+[EpicGamesLauncher.exe,-15,auto,true]
+
+[RiotClientServices.exe,-15,auto,true]
+
+
+
+
+
+
+[fontdrvhost.exe]
+module=fontdrvhost.exe, 1
+
+
+
+
+[winlogon.exe]
+module=ntdll.dll, -15
+module=winlogon.exe, -15
+
+
+
+
+
+[DisableBoost]
+explorer.exe
+dwm.exe
+audiodg.exe
+gamingservices.exe
+gamingservicesnet.exe
+svchost.exe
+rundll32.exe
+NVIDIA Overlay.exe
+WMIADAP.exe
+winlogon.exe
+WmiPrvSE.exe
+ctfmon.exe
+dllhost.exe
+RuntimeBroker.exe
+winws.exe
+MSIAfterburner.exe
+steam.exe
+steamwebhelper.exe
+SecretTweakGameMode.exe
+discord.exe
+NVDisplay.Container.exe
+ProcessHacker.exe
+SystemInformer.exe
+upc.exe
+UbisoftGameLauncher.exe
+UplayWebCore.exe

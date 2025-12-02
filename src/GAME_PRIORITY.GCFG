@@ -15,9 +15,7 @@
 # true = NO boosting (recommended for gaming)
 # false = YES boosting (Windows default)
 
-#MODIFIED Beyond Fortnite Thread Template For Controller Player
-
-
+#MODIFIED Beyond Fortnite CONFIG
 [FortniteClient-Win64-Shipping.exe]
 # CRITICAL PATH - Maximum priority
 RenderThread 0=15,ALL,False
@@ -33,5 +31,938 @@ RtcWorkerThread=0,ALL,true
 
 # LOW PRIORITY - Background tasks
 FAsyncLoadingThread=-15,ALL,true
-WindowsRawInputThread=-2,ALL,true 
+#WindowsRawInputThread=-2,ALL,true 
+#REMOVE "#" FOR WindowsRawInputThread IF YOU ARE ON CONTROLLER
 # Why Input Thread is lowest? https://x.com/BEYONDPERF_LLG/status/1993263329993724067
+
+
+
+[Client-Win64-Shipping.exe]
+module=ACE-DFS64.dll, 200
+module=ACE-CSI64.dll, 200
+module=ACE-ATS64.dll, 200
+module=ACE-DRV64.dll, 200
+module=XAudio2_9.dll, -15
+module=nvcuda64.dll, 200
+module=nvwgf2umx.dll, 200
+module=nvoglv64.dll, 200
+module=mswsock.dll, 200
+module=netbios.dll, -15
+module=PerfSight.dll, 200
+module=CrashSight64.dll, 200
+module=wininet.dll, 200
+module=libScePad.dll, -2
+module=combase.dll, -15
+module=GdiPlus.dll, 200
+module=CrashSight64.dll, 200
+module=ACE-Safe.dll, 200
+module=ACE-Base64.dll, 200
+module=sl.reflex.dll, 200
+
+[PathOfExileSteam.exe]
+module=VkLayer_steam_fossilize64.dll, 300
+module=nvwgf2umx.dll, 200
+module=nvcuda64.dll, 200
+module=mswsock.dll, 200
+module=InputHost.dll, 200
+module=combase.dll, 200
+module=fmod.dll, -2
+module=fmodstudio.dll, -2
+module=wininet.dll, 200
+module=GdiPlus.dll, 200
+
+[Warframe.x64.exe]
+module=nvwgf2umx.dll, 200
+module=AudioSes.dll, 200
+module=dinput8.dll, 15
+module=InputHost.dll, 200
+module=combase.dll, -15
+module=XAudio2_9.dll, -2
+module=ssdpapi.dll, 200
+module=wininet.dll, 200
+module=mswsock.dll, 200
+module=nvcuda64.dll, 200
+
+[Terraria.exe]
+module=XAudio2_6.dll, -2
+module=xactengine3_6.dll, -15
+module=steamclient.dll, 200
+module=GdiPlus.dll, 200
+module=combase.dll, 200
+
+[GTA5.exe]
+module=dsound.dll, 200
+module=EOSSDK-Win64-Shipping.dll, 200
+module=XAudio2_7.dll, -2
+module=socialclub.dll, -15
+module=combase.dll, 200
+module=InputHost.dll, 200
+module=mswsock.dll, 200
+
+[RDR2.exe]
+module=InputHost.dll, 200
+module=mswsock.dll, 200
+module=socialclub.dll, -15
+module=nvcuda64.dll, 200
+module=combase.dll, 200
+
+[warfork_x64.exe]
+module=msvcrt.dll, -2
+module=InputHost.dll, 200
+
+[osu!.exe]
+module=Windows.Gaming.Input.dll, 200
+module=bassmix.dll, 200
+module=AuthNative.dll, 200
+module=GdiPlus.dll, 200
+module=InputHost.dll, 200
+module=rasman.dll, 200
+
+[TheDivision.exe]
+module=wdmaud.drv, -15
+module=XAudio2_9.dll, -2
+module=overlay64.dll, 200
+module=combase.dll, 200
+module=InputHost.dll, 200
+module=mswsock.dll, 200
+module=AudioSes.dll, -15
+module=nvcuda64.dll, 200
+module=bink2w64.dll, 200
+module=dinput8.dll, 200
+
+[Trackmania.exe]
+module=OpenAL64_bundled.dll, -15
+module=dinput8.dll, 15
+module=mswsock.dll, 200
+module=InputHost.dll, 200
+module=vivoxsdk.dll, -15
+module=anzu.dll, -15
+module=overlay64.dll, 200
+module=wininet.dll, 300
+
+[BEService.exe]
+module=sechost.dll, -15
+module=ntdll.dll, -15
+module=BEService.exe, -15
+
+[ZenlessZoneZero.exe]
+module=Astrolabe.dll, 300
+module=AkSoundEngine.dll, -2
+module=XAudio2_9.dll, -2
+module=telemetry.dll, 300
+module=AudioSes.dll, 200
+module=InputHost.dll, 200
+module=mswsock.dll, 200
+module=MiHoYoMTRSDK.dll, 300
+module=mhypbase.dll, 300
+
+[UbisoftGameLauncher.exe]
+module=UbisoftGameLauncher.exe, -2
+
+[upc.exe]
+module=libcef.dll, -2
+module=upc.exe, -2
+module=directmanipulation.dll, 200
+module=gdiplus.dll, 200
+module=inputhost.dll, 200
+module=mswock.dll, 200
+
+[GenshinImpact.exe]
+module=Astrolabe.dll, 200
+module=EOSSDK-Win64-Shipping.dll, -15
+module=AudioSes.dll, 200
+module=XAudio2_9.dll, -2
+module=telemetry.dll, 200
+module=mhypbase.dll, 300
+module=InputHost.dll, 200
+module=mswsock.dll, 200
+module=Mmoron.dll, -2
+module=combase.dll, 200
+
+[StarRail.exe]
+module=AkSoundEngine.dll, -2
+module=Astrolabe.dll, 300
+module=telemetry.dll, 200
+module=mhypbase.dll, 300
+module=InputHost.dll, 200
+module=InControlNative.dll, 200
+module=mswsock.dll, 200
+module=combase.dll, -15
+module=ZFProxyWeb.dll, -15
+
+[KILL KNIGHT.exe]
+module=InputHost.dll, 200
+module=mswsock.dll, 200
+module=Windows.Gaming.Input.dll, 300
+module=sentry.dll, 200
+module=steamclient64.dll, 200
+
+[wwzRetail.exe]
+module=XAudio2_9.dll, 200
+module=pros.sdk.x64.dll, 200
+module=mswsock.dll, 200
+module=InputHost.dll, 200
+module=combase.dll, 200
+module=AudioSes.dll, 200
+module=ucrtbase.dll, -1
+
+[Maine-WinGDK-Shipping.exe]
+module=msvcrt.dll, 200
+module=combase.dll, 200
+module=Windows.Media.Devices.dll, 200
+module=InputHost.dll, 200
+module=XAudio2_9.dll, -15
+module=nvwgf2umx.dll, 200
+
+[SC2_x64.exe] 
+module=wdmaud.drv, 200 
+module=dsound.dll, 200
+module=mswsock.dll, 200
+module=nvd3dumx.dll, -1
+module=d3d9.dll, -1
+
+[EasyAim.exe]
+module=combase.dll, 200
+module=directmanipulation.dll, 200
+module=MsSpellCheckingFacility.dll, 200
+module=wininet.dll, 200
+module=mswsock.dll, 200
+
+[Diablo IV.exe]
+module=nvcuda64.dll, 200
+module=sl.pcl.dll, 200
+module=vivoxsdk.dll, -15
+module=InputHost.dll, 200
+module=mswsock.dll, 200
+
+[DiabloImmortal.exe]
+module=NgVoice.dll, 200
+module=AudioEngine.dll, 200
+module=AudioCore.dll, 200
+module=AudioSes.dll, 200
+module=XAudio2_9.dll, -2
+module=NtUniSdkBase.dll, 200
+module=NtUniSdkMpayOversea.dll, 200
+module=NtUniSdkOrbit.dll, 200
+module=NtUniSdkShare.dll, 200
+module=NtUniSdkNgVoice.dll, 200
+module=webview_support_helper.dll, 200
+module=CrashHunter_PC3.dll, 200
+module=InputHost.dll, 200
+module=mpay_oversea.dll, 200
+module=mswsock.dll, 200
+
+[forza_gaming.desktop.x64_release_final.exe]
+module=nvcuda64.dll, 200
+module=nvwgf2umx.dll, 200
+module=sl.reflex.dll, 200
+module=XAudio2_9.dll, 200
+module=InputHost.dll, 200
+module=PartyXboxLive.dll, 200
+module=tm_api_lib_x64.dll, 200
+module=msvcrt.dll, 200
+module=AudioSes.dll, 200
+module=combase.dll, 200
+module=Windows.Gaming.Input.dll, 15
+module=Party.dll, 2 
+module=ucrtbase.dll, 200
+module=wininet.dll, 200
+module=XCurl.dll, 200
+
+[ForzaHorizon5.exe]
+module=tm_api_lib_x64.dll, 200
+module=XAudio2_9.dll, 200
+module=AudioSes.dll, 200
+module=combase.dll, 200
+module=InputHost.dll, 200
+module=nvcuda64.dll, 200
+module=nvwgf2umx.dll, 200
+module=sl.reflex.dll, 200
+module=Windows.Gaming.Input.dll, 300
+module=XAudio2_9.dll, 200
+
+[ForzaHorizon4.exe]
+module=MrmCoreR.dll, 200
+module=AudioSes.dll, 200
+module=combase.dll, 200
+module=InputHost.dll, 200
+module=nvwgf2umx.dll, 200
+module=XAudio2_9.dll, 200
+
+[Minecraft.Windows.exe]
+module=MrmCoreR.dll, 200
+module=InputHost.dll, 200
+module=nvwgf2umx.dll, 200
+
+[Stalker2-Win64-Shipping.exe]
+module=XAudio2_9.dll, 200
+module=steamclient64.dll, 200
+module=nvwgf2umx.dll, 200
+module=nvcuda64.dll, 200
+module=sl.pcl.dll, 200
+module=winmm.dll, 200
+module=AudioSes.dll, 200
+
+[PAYDAY3Client-Win64-Shipping.exe] 
+module=sl.pcl.dll, 200
+module=AudioSes.dll, 200
+module=combase.dll, 200
+module=XAudio2_9.dll, 200
+module=dsound.dll, 200
+module=EOSSDK-Win64-Shipping.dll, 200
+module=mswsock.dll, 200
+module=InputHost.dll, 200
+module=nvcuda64.dll, 200
+module=nvwgf2umx.dll, 200
+
+[PAYDAY3Client-WinGDK-Shipping.exe] 
+module=sl.pcl.dll, 200
+module=AudioSes.dll, 200
+module=combase.dll, 200
+module=XAudio2_9.dll, 200
+module=dsound.dll, 200
+module=EOSSDK-Win64-Shipping.dll, 200
+module=gameplatformservices.dll, -15
+module=mswsock.dll, 200
+module=InputHost.dll, 200
+module=nvcuda64.dll, 200
+module=nvwgf2umx.dll, 200
+
+[AC2-Win64-Shipping.exe]
+module=XAudio2_9.dll, -15
+module=InputHost.dll, 200
+module=mswsock.dll, 200
+module=nvcuda64.dll, 200
+module=fmodstudio.dll, -1
+
+[payday2_win32_release.exe]
+module=discord-rpc.dll, 200
+module=EOSSDK-Win32-Shipping.dll, 200
+module=dsound.dll, 200
+module=XAudio2_7.dll, -15
+module=InputHost.dll, 200
+module=mswsock.dll, 200
+
+[hl2.exe] 
+module=awesomium.dll, -2
+module=mswsock.dll, 200
+module=InputHost.dll, 200
+module=steamclient.dll, 2 
+module=bass.dll, 200
+module=dsound.dll, -15 
+
+[Witchfire-Win64-Shipping.exe]
+module=EOSSDK-Win64-Shipping.dll, 200
+module=sl.reflex.dll, 200
+module=steam_api64.dll, 200
+module=XAudio2_9.dll, -15 
+
+[dota2.exe]
+module=steamclient64.dll, 200
+module=video64.dll, -15
+module=SDL3.dll, -15
+module=steamnetworkingsockets.dll, 2 
+
+[RocketLeague.exe]
+module=mswsock.dll, 200 
+module=InputHost.dll, 200
+module=dinput8.dll, 15 
+module=dsound.dll, -15 
+module=ucrtbase.dll, -15 
+module=EOSSDK-Win64-Shipping.dll, 200
+
+[project8.exe]
+module=steamnetworkingsockets, 2 
+module=video64.dll, -2
+
+[BorderlandsPreSequel.exe]
+module=GdiPlus.dll, 200
+module=nvcuda32.dll, 200
+module=AudioSes.dll, 200
+module=wininet.dll, 200
+module=perfdisk.dll, 200
+module=XAudio2_9.dll, 200	
+module=InputHost.dll, 200
+module=PhysXCore.dll, -1
+module=dsound.dll, -2 
+module=bink2w32.dll, -2
+module=bifrost.dll, -15
+module=mswsock.dll, 200
+module=dinput8.dll, 2 
+module=steamclient.dll, 200 
+
+[borderlands2.exe]
+module=wininet.dll, 200
+module=InputHost.dll, 200
+module=PhysXCore.dll, -1
+module=dsound.dll, -2 
+module=bink2w32.dll, -2
+module=bifrost.dll, -15
+module=mswsock.dll, 200
+module=dinput8.dll, 2 
+module=steamclient.dll, 200
+module=combase.dll, 200
+module=GdiPlus.dll, 200
+
+[EasyAntiCheat.exe]
+module=EasyAntiCheat.exe, 300
+
+[Aimbeast-Win64-Shipping.exe]
+module=XAudio2_9.dll, -15 
+module=ucrtbase.dll, -15
+module=libcef.dll, -15
+module=AudioSes.dll, 200
+module=GfnRuntimeSdk.dll, -15
+module=steamclient64.dll, 200
+
+[overwatch.exe]
+module=vivoxsdk.dll, -15
+module=mswsock.dll, 200
+module=Overwatch_loader.dll, 200
+module=InputHost.dll, 200
+module=bink2w64.dll, -2
+module=nvcuda64.dll, 200
+
+[CrashMailer_64.exe]
+module=CrashMailer_64.exe, 200
+
+[FSD-Win64-Shipping.exe]
+module=dsound.dll, 200 
+module=nvcuda64.dll, 200
+module=XAudio2_9.dll, -2 
+module=steamclient64.dll, 2 
+
+[cs2.exe]
+module=embree3.dll, -2
+module=phonon.dll, -2
+module=video64.dll, -1
+module=steamclient.dll, 300
+
+[steam.exe]
+module=InputHost.dll, 200
+module=steam.exe, -2
+module=steamservice.dll, -2
+module=steamclient.dll, 200
+module=ntdll.dll, -2
+module=tier0_s.dll, -2
+
+[steamwebhelper.exe]
+module=steamwebhelper.exe, -2
+module=libcef.dll, -2
+module=mswsock.dll, 200
+module=msmpeg2vdec.dll, -15
+module=ntdll.dll, -15
+module=nvoglv64.dll, 200
+
+[tf_win64.exe]
+module=XAudio2_7.dll, -2
+module=Windows.Gaming.Input.dll, 300
+module=steamclient64.dll, 2 
+module=video64.dll, -15
+module=InputHost.dll, 200
+module=nvcuda64.dll, 200
+
+[GoWR.exe]
+module=bink2w64.dll, -2
+module=mswsock.dll, 200
+module=libScePad.dll, 200
+module=nvwgf2umx.dll, 200
+module=sl.pcl.dll, 200
+module=nvcuda64.dll, 200
+module=GameInput.dll, -1 
+module=InputHost.dll, 200
+
+[farcry5.exe]
+module=InputHost.dll, 200
+module=mswsock.dll, 200
+module=Tobii.GameIntegration.dll, 200
+module=FC_m64.dll, -2 
+module=dinput8.dll, 2
+module=bink2w64.dll, -2
+
+[VALORANT-Win64-Shipping.exe,ALL,true]
+
+# === CRITICAL THREADS - Maximum Priority ===
+# Rendering pipeline (most important for FPS)
+RenderThread 0=15,ALL,true
+RHIThread=15,ALL,true
+RTHeartBeat 0=15,ALL,true
+
+# Core game logic
+GameThread=15,ALL,true
+
+
+
+# === HIGH PRIORITY - Essential Functions ===
+# Input/Output operations
+IOThreadPool #0=2,ALL,true
+IOThreadPool #1=2,ALL,true
+IOThreadPool #2=2,ALL,true
+IOThreadPool #3=2,ALL,true
+IoService=2,ALL,true
+IoDispatcher=2,ALL,true
+# Audio processing
+AudioMixerNullCallbackThread=2,ALL,true
+AudioMixerRenderThread(1)=2,ALL,true
+
+# Foreground workers
+Foreground Worker #0=2,ALL,true
+Foreground Worker #1=2,ALL,true
+
+# === NORMAL PRIORITY - Important Services ===
+# Network communication
+HttpManagerThread=0,ALL,true
+HttpClient=0,ALL,true
+RiotGamesApi-M=0,ALL,true
+OnlineAsyncTaskThreadNull DefaultInstance(1)=0,ALL,true
+
+# Thread pool management
+ThreadPoolServiceThread=0,ALL,true
+ThreadPoolForegroundWorker=0,ALL,true
+ThreadPoolSingleThreadCOMSTASharedForeground0=0,ALL,true
+ThreadPoolSingleThreadCOMSTASharedForegroundBlocking1=0,ALL,true
+ThreadPoolSingleThreadForegroundBlocking2=0,ALL,true
+ThreadPoolSingleThreadSharedForegroundBlocking4=0,ALL,true
+
+# Media and tickers
+FMediaTicker=0,ALL,true
+OutputDeviceRedirector=0,ALL,true
+FMessageBus.DefaultBus.Router=0,ALL,true
+ScreenSaverInhibitor=0,ALL,true
+
+# Loading operations
+FAsyncLoadingThread=0,ALL,true
+
+# Chat and communication
+ChatExeContext=0,ALL,true
+RmsThread=0,ALL,true
+
+# Dispatcher threads
+Disp-1=0,ALL,true
+Disp-2=0,ALL,true
+Disp-3=0,ALL,true
+Disp-4=0,ALL,true
+Disp-13=0,ALL,true
+Disp-14=0,ALL,true
+Disp-15=0,ALL,true
+
+# Unknown thread pools
+UnknownThreadPool #0=0,ALL,true
+UnknownThreadPool #1=0,ALL,true
+UnknownThreadPool #2=0,ALL,true
+UnknownThreadPool #3=0,ALL,true
+UnknownThreadPool #4=0,ALL,true
+UnknownThreadPool #5=0,ALL,true
+
+# === BELOW NORMAL PRIORITY - Background Tasks ===
+# Background workers
+Background Worker #2=-1,ALL,true
+Background Worker #3=-1,ALL,true
+Background Worker #4=-1,ALL,true
+BackgroundThreadPool #0=-1,ALL,true
+BackgroundThreadPool #1=-1,ALL,true
+
+# Reserve workers
+Reserve Worker #0=-1,ALL,true
+Reserve Worker #1=-1,ALL,true
+Reserve Worker #2=-1,ALL,true
+Reserve Worker #3=-1,ALL,true
+Reserve Worker #4=-1,ALL,true
+
+# File operations
+FAsyncWriter_ShooterGame=-1,ALL,true
+FAsyncPurge=-1,ALL,true
+FChunkCacheWorker=-1,ALL,true
+
+# Compositor
+CompositorTileWorker1=-1,ALL,true
+
+# Electra media player
+ElectraPlayer::EventDispatch=-1,ALL,true
+ElectraPlayer::SharedWorker=-1,ALL,true
+ElectraHTTPStream=-1,ALL,true
+ElectraPlayer::MP4 streamer=-1,ALL,true
+ElectraPlayer::Video decoder=-1,ALL,true
+
+# === SUSPENDED THREADS - Non-essential (frees CPU cycles) ===
+# Telemetry and analytics
+FTelemetryWorker1=300,ALL,true
+FTelemetryWorker2=300,ALL,true
+TelemetrySched=300,ALL,true
+EventCollector=300,ALL,true
+LogWorker=300,ALL,true
+
+# Chrome/Chromium components
+Chrome_IOThread=300,ALL,true
+MemoryInfra=300,ALL,true
+
+# Video and file operations
+VideoCaptureThread=300,ALL,true
+FileAttachmentUploadThread=300,ALL,true
+
+# Background thread workers
+ThreadPoolBackgroundWorker=300,ALL,true
+ThreadPoolSingleThreadSharedBackgroundBlocking3=300,ALL,true
+
+
+
+
+
+
+# Discovery-d (the final)
+[Discovery-d.exe,ALL,true]
+
+# === CRITICAL THREADS - Maximum Priority (Real-time) ===
+# Rendering pipeline - most critical for FPS
+RHIInterruptThread=15,ALL,true
+RHISubmissionThread=15,ALL,true
+RHIThread=15,ALL,true
+RenderThread 0=15,ALL,true
+RTHeartBeat 0=15,ALL,true
+
+# Core game logic
+GameThread=15,ALL,true
+
+
+
+# === HIGH PRIORITY - Essential Functions ===
+# Input/Output operations
+IOThreadPool #0=2,ALL,true
+IOThreadPool #1=2,ALL,true
+IOThreadPool #2=2,ALL,true
+IOThreadPool #3=2,ALL,true
+IoService=2,ALL,true
+IoDispatcher=2,ALL,true
+Bink IO=2,ALL,true
+AudioMixerNullCallbackThread=2,ALL,true
+AudioMixerRenderThread(1)=2,ALL,true
+RTNSessionHeartbeatThread=2,ALL,true
+
+# Foreground workers
+Foreground Worker #0=2,ALL,true
+Foreground Worker #1=2,ALL,true
+Foreground Worker #2=2,ALL,true
+Foreground Worker #3=2,ALL,true
+
+# Soft real-time operations
+SoftRealtimeThreadPool #0=2,ALL,true
+SoftRealtimeThreadPool #1=2,ALL,true
+FHeartBeatThread=2,ALL,true
+ThreadedTickWebSocketThread=2,ALL,true
+
+# === NORMAL PRIORITY - Important Services ===
+# Network and communication
+HttpManagerThread=0,ALL,true
+LibwebsocketsThread=0,ALL,true
+RtcNetworkThread=0,ALL,true
+RtcWorkerThread=0,ALL,true
+RtcSignalingThread=0,ALL,true
+WebSocketClient=0,ALL,true
+TaskQueuePacedSender=0,ALL,true
+rtp_send_controller=0,ALL,true
+AudioEncoder=0,ALL,true
+
+
+
+# Reserve and utility threads
+Reserve Worker #0=0,ALL,true
+Reserve Worker #1=0,ALL,true
+Reserve Worker #2=0,ALL,true
+Reserve Worker #3=0,ALL,true
+Reserve Worker #4=0,ALL,true
+
+# Loading and async operations
+FAsyncLoadingThread=-2,ALL,true
+FMediaTicker=-2,ALL,true
+OutputDeviceRedirector=-2,ALL,true
+FMessageBus.DefaultBus.Router=-2,ALL,true
+ScreenSaverInhibitor=-2,ALL,true
+
+# Online services
+OnlineAsyncTaskThreadSteam DefaultInstance=-2,ALL,true
+FOnlineAsyncTaskManagerDiscord=-2,ALL,true
+
+# Bink video playback
+BinkAsy0=-2,ALL,true
+BinkAsy1=-2,ALL,true
+BinkAsy2=-2,ALL,true
+BinkAsy3=-2,ALL,true
+
+# Unknown thread pools
+UnknownThreadPool #0=0,ALL,true
+UnknownThreadPool #1=0,ALL,true
+UnknownThreadPool #2=0,ALL,true
+UnknownThreadPool #3=0,ALL,true
+UnknownThreadPool #4=0,ALL,true
+UnknownThreadPool #5=0,ALL,true
+UnknownThreadPool #6=0,ALL,true
+UnknownThreadPool #7=0,ALL,true
+
+# === BELOW NORMAL PRIORITY - Background Tasks ===
+# Background thread pools
+BackgroundThreadPool #0=-2,ALL,true
+BackgroundThreadPool #1=-2,ALL,true
+BackgroundThreadPool #2=-2,ALL,true
+
+# Quilkin network threads
+QuilkinThreadPool #0=-1,ALL,true
+QuilkinThreadPool #1=-1,ALL,true
+QuilkinThreadPool #2=-1,ALL,true
+QuilkinThreadPool #3=-1,ALL,true
+
+# Async operations
+FAsyncPurge=-15,ALL,true
+
+# D3D background threads
+D3D Background Thread 0=-1,ALL,true
+D3D Background Thread 1=-1,ALL,true
+
+# === LOWEST PRIORITY - Non-critical ===
+# Anti-cheat (low priority to not interfere with gameplay)
+AntiCheat #0=-15,ALL,true
+
+# Logging and monitoring
+sl.log=-15,ALL,true
+sentry-http=-15,ALL,true
+
+
+
+
+[RobloxPlayerBeta.exe,ALL,true]
+
+
+
+
+# HIGH PRIORITY - Multiplayer and timing
+Main=15,ALL,true
+RBX Worker 1=15,ALL,true
+RBX Worker 2=15,ALL,true
+RBX Worker 3=15,ALL,true
+RakNet::UpdateNetworkLoop=15,ALL,true
+RakNet::RecvFromLoop=15,ALL,true
+RBX Ticker=2,ALL,true
+
+# NORMAL PRIORITY - Essential services only
+WsClient=0,ALL,true
+HttpThreadPool=0,ALL,true
+MeshContentProvider=0,ALL,true
+
+# LOWEST PRIORITY - Everything else
+HttpClient=-15,ALL,true
+HttpClientHandler=-15,ALL,true
+apRedirectR=-15,ALL,true
+apRedirectW=-15,ALL,true
+apAssetCacheR=-15,ALL,true
+apAssetCacheW=-15,ALL,true
+apExecutor=-15,ALL,true
+BatchAssetApi=-15,ALL,true
+SlimContentProvider=-15,ALL,true
+SolidModelContentProvider=-15,ALL,true
+HSRDataContentProvider=-15,ALL,true
+callbackExecutorFactory=-15,ALL,true
+VideoThreadPool=-15,ALL,true
+BlockingCall=-15,ALL,true
+DeferredEphemeral TimerThread=-15,ALL,true
+EventIngest TimerThread=-15,ALL,true
+DynamicFastVar=-15,ALL,true
+
+
+
+
+
+
+[cs2.exe,ALL,true]
+
+# === REAL-TIME CRITICAL (15) ===
+MainThrd=15,ALL,true
+D3D11RenderThread=15,ALL,true
+
+# === HIGH PRIORITY (2) ===
+AudioMixer=2,ALL,true
+AsyncIOService/0=2,ALL,true
+AsyncIOService/1=2,ALL,true
+AsyncIOService/2=2,ALL,true
+
+# Shader compilation (prevents stuttering)
+Async Shader Compile/0=2,ALL,true
+Async Shader Compile/1=2,ALL,true
+Async Shader Compile/2=2,ALL,true
+Async Shader Compile/3=2,ALL,true
+Async Shader Compile/4=2,ALL,true
+Async Shader Compile/5=2,ALL,true
+Async Shader Compile/6=2,ALL,true
+
+# Game logic pools 
+GlobPool/0=0,ALL,true
+GlobPool/1=0,ALL,true
+GlobPool/2=0,ALL,true
+
+# === LOWEST PRIORITY (-15) ===
+GlobPool/3=-15,ALL,true
+GlobPool/4=-15,ALL,true
+GlobPool/5=-15,ALL,true
+GlobPool/6=-15,ALL,true
+
+AsyncTextureHookup/0=-15,ALL,true
+
+# === SUSPENDED (300) ===
+CSteamAudioReverbSimulator=300,ALL,true
+CSteamAudioPartitioner=300,ALL,true
+SDLWASAPIMgmt=300,ALL,true
+SDLAudioP15=300,ALL,true
+Panorama Image Decode=300,ALL,true
+SaveJob/0=300,ALL,true
+
+
+
+
+
+
+[League of Legends,ALL,true]
+
+# === CRITICAL THREADS - Real-time Priority (15) ===
+# Network threads - most important for low latency
+LNP_Send=15,ALL,true
+LNP_Receive=15,ALL,true
+ClientClockSync=15,ALL,true
+
+# === HIGH PRIORITY (2) - Essential Game Functions ===
+# Worker threads - game logic processing
+WorkerThread_1=2,ALL,true
+WorkerThread_2=2,ALL,true
+WorkerThread_3=2,ALL,true
+WorkerThread_4=2,ALL,true
+WorkerThread_5=2,ALL,true
+
+# Streaming and content
+Streaming=2,ALL,true
+SNRStream=2,ALL,true
+LCUChatClient=2,ALL,true
+
+# === NORMAL PRIORITY (0) - Standard Services ===
+Remoting=0,ALL,true
+SystemLoad=0,ALL,true
+
+# === LOWEST PRIORITY (-15) - Background Tasks ===
+HttpClient=-15,ALL,true
+AsyncFileLogger=-15,ALL,true
+DradisWriter=-15,ALL,true
+EventCollector=-15,ALL,true
+
+# === SUSPENDED (300) - Non-essential/Analytics ===
+# Note: These free up CPU cycles for gameplay
+# Suspending these may affect some non-essential features
+# but greatly improves performance
+
+# League Client Process
+[LeagueClient,ALL,true]
+
+# === NORMAL PRIORITY (0) - Minimal Client Functions ===
+# Essential communication threads
+ExternalClient=0,ALL,true
+Remoting=0,ALL,true
+RmsThread=0,ALL,true
+RiotGamesApi-M=0,ALL,true
+
+# Foundation threads (keep minimal)
+Foundation-1=0,ALL,true
+Foundation-2=0,ALL,true
+Foundation-3=0,ALL,true
+Foundation-4=0,ALL,true
+
+# Dispatcher threads (reduced priority)
+Disp-System=0,ALL,true
+Disp-rcp-be-lol=0,ALL,true
+
+# === LOWEST PRIORITY (-15) - Client Background Tasks ===
+# All other Dispatcher threads
+Disp-01=-15,ALL,true
+Disp-02=-15,ALL,true
+Disp-03=-15,ALL,true
+Disp-04=-15,ALL,true
+Disp-05=-15,ALL,true
+Disp-06=-15,ALL,true
+Disp-07=-15,ALL,true
+Disp-08=-15,ALL,true
+Disp-09=-15,ALL,true
+Disp-10=-15,ALL,true
+Disp-11=-15,ALL,true
+Disp-12=-15,ALL,true
+Disp-13=-15,ALL,true
+Disp-14=-15,ALL,true
+Disp-15=-15,ALL,true
+Disp-16=-15,ALL,true
+Disp-17=-15,ALL,true
+Disp-18=-15,ALL,true
+Disp-19=-15,ALL,true
+Disp-20=-15,ALL,true
+Disp-21=-15,ALL,true
+Disp-22=-15,ALL,true
+Disp-23=-15,ALL,true
+Disp-24=-15,ALL,true
+Disp-25=-15,ALL,true
+Disp-26=-15,ALL,true
+Disp-27=-15,ALL,true
+Disp-28=-15,ALL,true
+Disp-29=-15,ALL,true
+Disp-30=-15,ALL,true
+Disp-31=-15,ALL,true
+Disp-32=-15,ALL,true
+
+# Client background services
+HttpClient=-15,ALL,true
+LogWorker=-15,ALL,true
+TelemetrySched=-15,ALL,true
+EventCollector=-15,ALL,true
+AsyncFileLogger=-15,ALL,true
+
+# === SUSPENDED (300) - Client Analytics/Telemetry ===
+Tracing=300,ALL,true
+DradisWriter=300,ALL,true
+ErrorMonitor=300,ALL,true
+
+
+
+
+
+# PUBG BattleGrounds Aggressive Configuration
+# ===========================================
+[TslGame.exe,0-3,true]
+
+# Critical game threads only - everything else deprioritized
+HttpManagerThread=2,0-1,true
+LibwebsocketsThread=1,0-1,true
+ThreadedTickWebSocketThread=2,0-1,true
+
+# EOS Overlay - minimal resources
+[EOSOverlayRenderer-Win64-Shipping.exe,6-7,true]
+
+# Suspend all EOS overlay threads (use 300 for suspend)
+CrBrowserMain=300,6-7,true
+CrGpuMain=300,6-7,true
+CrUtilityMain=300,6-7,true
+storage.CrUtilityMain=300,6-7,true
+network.CrUtilityMain=300,6-7,true
+LoaderLockSampler=300,6-7,true
+HangWatcher=300,6-7,true
+ThreadPoolServiceThread=300,6-7,true
+ThreadPoolForegroundWorker=300,6-7,true
+ThreadPoolBackgroundWorker=300,6-7,true
+Chrome_IOThread=300,6-7,true
+MemoryInfra=300,6-7,true
+BrokerEvent=300,6-7,true
+GpuWatchdog=300,6-7,true
+VizCompositorThread=300,6-7,true
+Chrome_ChildIOThread=300,6-7,true
+CompositorTileWorker1=300,6-7,true
+VideoCaptureThread=300,6-7,true
+CacheThread_BlockFile=300,6-7,true
+ThreadPoolSingleThreadCOMSTASharedForegroundBlocking0=300,6-7,true
+ThreadPoolSingleThreadCOMSTASharedBackgroundBlocking1=300,6-7,true
+ThreadPoolSingleThreadCOMSTASharedForeground2=300,6-7,true
+ThreadPoolSingleThreadForegroundBlocking3=300,6-7,true
+ThreadPoolSingleThreadSharedBackgroundBlocking4=300,6-7,true
+ThreadPoolSingleThreadSharedForeground5=300,6-7,true
+ThreadPoolSingleThreadCOMSTASharedForegroundBlocking6=300,6-7,true
+ThreadPoolSingleThreadCOMSTASharedBackgroundBlocking7=300,6-7,true
+ThreadPoolSingleThreadSharedForegroundBlocking8=300,6-7,true
