@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- WinForms configuration editor ONLY (no monitoring / no runtime changes) -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <AssemblyName>ProcRipperConfig</AssemblyName>
+    <RootNamespace>ProcRipperConfig</RootNamespace>
+
+    <!-- Use the dedicated entry point for the config editor -->
+    <StartupObject>ProcRipperConfig.Program</StartupObject>
+
+    <ApplicationIcon>..\..\app.ico</ApplicationIcon>
+
+    <!-- Output into shared Bin folder -->
+    <BaseOutputPath>..\..\Bin\</BaseOutputPath>
+
+    <!-- Publish settings (optional, keep aligned with ProcRipper) -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+    <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Needs access to shared core models + config loader.
+         We'll reference the ProcRipper project so we don't duplicate those classes. -->
+    <ProjectReference Include="..\ProcRipper\ProcRipper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Ship config files with the config editor output under a config/ subfolder -->
+    <None Include="..\..\config\**\*">
+      <Link>config\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

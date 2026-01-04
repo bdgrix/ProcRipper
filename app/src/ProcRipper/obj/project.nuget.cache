@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "OmhNE0iQ62A=",
+  "success": true,
+  "projectFilePath": "D:\\tweaks\\advanced\\ProcRippper\\beta v3.0.0\\src\\ProcRipper\\ProcRipper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\grix\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.22\\microsoft.net.illink.tasks.8.0.22.nupkg.sha512",
+    "C:\\Users\\grix\\.nuget\\packages\\system.codedom\\10.0.0\\system.codedom.10.0.0.nupkg.sha512",
+    "C:\\Users\\grix\\.nuget\\packages\\system.management\\10.0.0\\system.management.10.0.0.nupkg.sha512",
+    "C:\\Users\\grix\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.57\\microsoft.windows.sdk.net.ref.10.0.17763.57.nupkg.sha512"
+  ],
+  "logs": []
+}

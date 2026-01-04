@@ -1,0 +1,11 @@
+# ================================================================
+# ProcRipper Global Configuration (v3.0.0)
+# This file controls features that are NOT tied to a single game
+# or system process profile (see GAME_PRIORITY.GCFG / PROC_PRIORITY.GCFG).
+# ================================================================
+
+# Generated on 2025-12-19 15:57:05
+memory_limit_enabled=False
+network_throttle=False
+auto_idle=True
+verbose_startup=True
